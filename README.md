@@ -3,6 +3,7 @@ tool: add debug statements after statements to store values
 
 - You can add debug statements after all statements to store values.
 - You can remove all debug statements with this tool, of course.
+- You can edit debug function `dmp` to arrange debug as you like
 
 
 ## Installation
