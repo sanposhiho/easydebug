@@ -4,6 +4,21 @@ tool: add debug statements after statements to store values
 - You can add debug statements after all statements to store values.
 - You can remove all debug statements with this tool, of course.
 
+
+## Usage
+
+### add debug statements
+
+```
+easydebug -filename sample.go -mode 0
+```
+
+### remove debug statements
+
+```
+easydebug -filename sample.go -mode 1
+```
+
 ## sample
 
 ### before
@@ -72,18 +87,4 @@ func dmp(valueName string, v ...interface{}) {
 
 ```
 go get -u github.com/sanposhiho/easydebug
-```
-
-## Usage
-
-### add debug statements
-
-```
-easydebug -filename sample.go -mode 0
-```
-
-### remove debug statements
-
-```
-easydebug -filename sample.go -mode 1
 ```
