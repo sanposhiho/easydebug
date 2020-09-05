@@ -16,7 +16,7 @@ import (
 
 var (
 	mode     = flag.Int("mode", 0, "mode must be set\n 0: add debug statements\n 1: remove debug statements\n")
-	filename = flag.String("filename", "", "target filename must be set\n")
+	filename = flag.String("f", "", "target filename must be set\n")
 )
 
 func Usage() {

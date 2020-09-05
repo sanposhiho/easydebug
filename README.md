@@ -5,18 +5,24 @@ tool: add debug statements after statements to store values
 - You can remove all debug statements with this tool, of course.
 
 
+## Installation
+
+```
+go get -u github.com/sanposhiho/easydebug
+```
+
 ## Usage
 
 ### add debug statements
 
 ```
-easydebug -filename sample.go -mode 0
+easydebug -f target.go -mode 0
 ```
 
 ### remove debug statements
 
 ```
-easydebug -filename sample.go -mode 1
+easydebug -f target.go -mode 1
 ```
 
 ## sample
@@ -81,10 +87,4 @@ func dmp(valueName string, v ...interface{}) {
       fmt.Printf("%s: %#v\n",valueName, vv)
   }
 }
-```
-
-## Installation
-
-```
-go get -u github.com/sanposhiho/easydebug
 ```
