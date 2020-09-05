@@ -85,6 +85,7 @@ func abusoluteTwo() int {
 // function for data dump
 func dmp(valueName string, v ...interface{}) {
   for _, vv := range(v) {
+      // arrange debug as you like
       fmt.Printf("%s: %#v\n",valueName, vv)
   }
 }
