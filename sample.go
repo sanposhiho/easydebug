@@ -4,16 +4,16 @@ func test() int {
 	hoge := 1
 	dmp("hoge", hoge)
 
-	println(hoge)
-
-	hoge = 2
-	dmp("hoge", hoge)
-
 	fuga := 3
 	dmp("fuga", fuga)
 
 	if hoge == 2 {
 		fuga = abusoluteTwo()
+		dmp("fuga", fuga)
+
+		hoge = 12
+		dmp("hoge", hoge)
+
 	}
 
 	return hoge + fuga
